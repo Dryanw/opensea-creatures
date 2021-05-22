@@ -21,14 +21,14 @@ contract("Creature", accounts => {
                 );
             });
         });
-    it("should have name as Creature", () =>
+    it("should have name as Stegosaurus", () =>
     {
       return instance.name()
           .then(name => {
               assert.equal(
               name,
-              "Creature",
-              "name is not creature"
+              "Stegosaurus",
+              "name is not Stegosaurus"
               );
           });
     });
